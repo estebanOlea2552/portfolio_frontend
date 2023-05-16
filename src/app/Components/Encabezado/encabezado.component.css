@@ -1,0 +1,9 @@
+/*Foto de perfil*/
+.profile-header-img {
+    border-radius: 100px;
+    overflow: hidden;
+}
+.img-circle {
+    width: 10rem;
+    height: 10rem;
+}

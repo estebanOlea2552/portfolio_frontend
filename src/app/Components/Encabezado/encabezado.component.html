@@ -1,0 +1,42 @@
+<div class="rounded-5 border border-primary border-2 m-4" style="overflow: hidden;" id="first-card">
+    <div class="container-fluid m-0 p-0" id="profile-background">
+        <div class="d-flex justify-content-center p-0 m-0">
+            <img class="w-100" [src]="encabezado.portada" alt="#" >
+        </div>
+
+    </div>
+    <div class="m-3 p-3" id="info">
+        <div class="info-img">
+            <div class="d-flex justify-content-left m-0 p-0">   
+                <div class="profile-header-img">
+                    <img class="img-circle rounded-circle border border-primary border-2" [src]="encabezado.perfil" />
+                </div>
+            </div> 
+        </div>
+        <div class="d-flex justify-content-between mt-4" id="info-data">
+            <div>
+                <h1>{{encabezado.nombre}}</h1>
+                <div id="info-company">{{encabezado.descripcion}}</div>
+                <div id="info-contact">
+                    <span>{{encabezado.residencia}}</span>
+                    <span><a class="text-decoration-none" href="#">Información de contacto</a></span>
+                </div>
+            </div>           
+        </div>
+        <div class="mt-4" id="info-actions">
+            <button type="button" class="btn btn-primary">
+                Tengo interes en
+            </button>
+            <button type="button" class="btn btn-light">
+                Añadir sección
+            </button>
+            <button type="button" class="btn btn-light">
+                Más
+            </button>
+        </div>
+        <button class="btn btn-primary btn-sm mt-4" routerLink="/editarencabezado/203">
+            Editar
+        </button>
+    </div>
+</div>
+

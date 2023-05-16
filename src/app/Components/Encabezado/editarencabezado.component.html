@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="mt-4">
+                    <label for="portada">Portada</label>
+                    <input type="text" class="form-control mt-2" id="portada" name="portada" [(ngModel)]="encabezado.portada" required>
+                </div>
+                <div class="mt-4">
+                    <label for="perfil">Perfil</label>
+                    <input type="text" class="form-control mt-2" id="perfil" name="perfil" [(ngModel)]="encabezado.perfil" required>
+                </div>
+                <div class="mt-4">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" class="form-control mt-2" id="nombre" name="nombre" [(ngModel)]="encabezado.nombre" required>
+                </div>
+                <div class="mt-4">
+                    <label for="descripcion">Descripcion</label>
+                    <input type="text" class="form-control mt-2" id="descripcion" name="descripcion" [(ngModel)]="encabezado.descripcion" required>
+                </div>
+                <div class="mt-4">
+                    <label for="residencia">Residencia</label>
+                    <input type="text" class="form-control mt-2" id="residencia" name="residencia" [(ngModel)]="encabezado.residencia" required>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4">
+                    Confirmar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

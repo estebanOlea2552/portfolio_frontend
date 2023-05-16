@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="mt-4">
+                    <label for="nombre">Habilidad</label>
+                    <input type="text" class="form-control mt-2" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+                </div>
+                <div class="mt-4">
+                    <label for="valor">Rango (Del 0 al 100)</label>
+                    <input type="text" class="form-control mt-2" id="valor" name="valor" [(ngModel)]="valor" required>
+                </div>               
+                <button type="submit" class="btn btn-primary mt-4">
+                    Confirmar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

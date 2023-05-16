@@ -1,0 +1,55 @@
+<div class="rounded-5 border border-primary border-2 m-4">
+    <div class="m-4">
+       <h2>Educación</h2>
+       <ul class="list-unstyled d-flex flex-column">
+            <li class="d-flex flex-column align-items-start mb-2">
+                <h4>{{escuela1.escuela}}</h4>
+                <span>{{escuela1.carrera}}</span>
+                <div>
+                    <button class="btn btn-primary btn-sm mt-4" type="button" routerLink="editareducacion/{{escuela1.id}}">
+                        Editar
+                    </button>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-sm mt-1" (click)="delete(escuela1.id)">
+                        Eliminar
+                    </button>
+                </div>
+                </li>            
+            <li class="d-flex flex-column align-items-start mb-2">
+                <h4>{{escuela2.escuela}}</h4>
+                <span>{{escuela2.carrera}}</span>
+                <div>
+                    <button class="btn btn-primary btn-sm mt-4" type="button" routerLink="editareducacion/{{escuela2.id}}">
+                        Editar
+                    </button>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-sm mt-1" (click)="delete(escuela2.id)">
+                        Eliminar
+                    </button>
+                </div>
+            </li>
+         
+            <li class="d-flex flex-column align-items-start mb-2">
+                <h4>{{escuela3.escuela}}</h4>
+                <span>{{escuela3.carrera}}</span>
+                <div>
+                    <button class="btn btn-primary btn-sm mt-4" type="button" routerLink="editareducacion/{{escuela3.id}}">
+                        Editar
+                    </button>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-sm mt-1" (click)="delete(escuela3.id)">
+                        Eliminar
+                    </button>
+                </div>
+            </li>            
+       </ul>
+       <div>
+            <button class="btn btn-primary btn-sm mt-4" type="button" routerLink="nuevaeducacion">
+                Agregar ítems
+            </button>
+        </div>
+    </div>       
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                <div class="mt-4">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" class="form-control mt-2" id="descripcion" name="descripcion" [(ngModel)]="acercaDe.descripcion" required>
+                </div>               
+                <button type="submit" class="btn btn-primary mt-4">
+                    Confirmar
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
