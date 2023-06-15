@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "portfolioweb-ed369"
-  }
+    "default": "portfolioweb-ed369",
+    "cuqui": "portfolioweb-ed369"
+  },
+  "targets": {},
+  "etags": {}
 }
